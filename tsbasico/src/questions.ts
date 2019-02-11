@@ -19,7 +19,6 @@ export class Questions {
     }
 
     public selectCar(){
-        console.log('Passo 1');
         prompt(
                 [
                     {
@@ -37,10 +36,8 @@ export class Questions {
                 ]
             ).then(
                     (answers : any) => {
-                        console.log('Passo 2');
                         console.log(`\nOlá ${answers.name}. Você gosta da marca ${answers.car}. Obrigado! \n`);
                     }
                 );
-        console.log('Passo 3');
     }
 }
