@@ -1,3 +1,3 @@
-import {Main} from './main';
+import {Language} from './language';
 
-new Main().run();
+Language.execute();

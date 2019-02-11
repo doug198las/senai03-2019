@@ -1,4 +1,4 @@
-export class Main {
+export class Language {
     /* Variaveis a nivel de class
     TypeScript possui apenas 4 tipos de dados */
     private minhaVarBoolean     : boolean = false;
@@ -32,6 +32,12 @@ export class Main {
       * protected - Métodos protegidos, podem ser acessados pela própria classe e por seus descendentes
     ------------------------------------------------------------------------------------------------------------*/
   
+    // Métodos estaticos só podem ser executados a partir da classe e não do objeto dela.
+    static execute(){
+      console.log('Passou pelo execute');
+      new Language().run();
+    }
+
     // Método publico e sem nenhum tipo de retorno
     public run() : void{
       console.log('Main method passed');
@@ -109,6 +115,6 @@ export class Main {
   
     //Metodo protegido com retorno opcional
     protected metodoProtejidoComRetornoOpcional(){
-  
+      console.log('metodoProtejidoComRetornoOpcional');
     }
   }
