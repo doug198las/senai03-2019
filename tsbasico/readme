@@ -1,14 +1,14 @@
-10 - Clonar projeto do github
-10 - Iniciar projeto node
-15 - Instalar dependencias
+- Clonar projeto do github
+- Iniciar projeto node
+- Instalar dependencias
     - inquirer
     - @types/inquirer
     - typescript
-10 - Instalar type script de forma global
-10 - Entender o package.json
-10 - Configurar projeto typescript
-40 - Repassar estrutura da linguagem
-30 - Interagir com o usuário
+- Instalar type script de forma global
+- Entender o package.json
+- Configurar projeto typescript
+- Repassar estrutura da linguagem
+- Interagir com o usuário
 - Exercicio
     - Software para delivery de pizza
         - Perguntar nome
