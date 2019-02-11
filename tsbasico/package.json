@@ -4,11 +4,15 @@
   "description": "",
   "main": "./src/index.js",
   "scripts": {
-    "start" : "tsc && node dist/index.js"
+    "start": "tsc && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/inquirer": "0.0.43",
     "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "inquirer": "^6.2.2"
   }
 }
