@@ -1,1 +1,3 @@
-console.log("Teste");
+import {Main} from './main';
+
+new Main().run();
