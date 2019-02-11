@@ -1,0 +1,26 @@
+10 - Clonar projeto do github
+10 - Iniciar projeto node
+15 - Instalar dependencias
+    - inquirer
+    - @types/inquirer
+    - typescript
+10 - Instalar type script de forma global
+10 - Entender o package.json
+10 - Configurar projeto typescript
+40 - Repassar estrutura da linguagem
+30 - Interagir com o usuário
+- Exercicio
+    - Software para delivery de pizza
+        - Perguntar nome
+        - Perguntar telefone
+        - Perguntar tamanho da pizza (Pequena, Média, Grande)
+        - Perguntar sabor (Listar vários sabores) - Pode selecionar apenas um sabor
+        - Perguntar quantidade
+        - Perguntar se é para entrega
+            -> Se não for, finalizar o processo
+            -> Se for Perguntar 
+                -> Cidade
+                -> Bairro
+                -> Rua
+                -> Numero
+                -> Complemento
