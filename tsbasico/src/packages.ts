@@ -19,6 +19,7 @@ export class Packages {
     }
 
     public selectCar(){
+        console.log('Passo 1');
         prompt(
                 [
                     {
@@ -36,8 +37,10 @@ export class Packages {
                 ]
             ).then(
                     (answers : any) => {
+                        console.log('Passo 2');
                         console.log(`\nOlá ${answers.name}. Você gosta da marca ${answers.car}. Obrigado! \n`);
                     }
                 );
+        console.log('Passo 3');
     }
 }
