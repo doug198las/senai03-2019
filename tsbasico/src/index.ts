@@ -1,4 +1,4 @@
 import {Language} from './language';
-import {Packages} from './packages';
+import {Questions} from './questions';
 
-new Packages().selectCar();
+new Questions().selectCar();

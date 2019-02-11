@@ -1,6 +1,6 @@
-import {Answers, prompt} from 'inquirer';
+import {prompt} from 'inquirer';
 
-export class Packages {
+export class Questions {
 
     public askName(){
         prompt(
