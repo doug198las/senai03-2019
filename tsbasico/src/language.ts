@@ -2,7 +2,7 @@ export class Language {
     /* Variaveis a nivel de class
     TypeScript possui apenas 4 tipos de dados */
     private minhaVarBoolean     : boolean = false;
-    private minhaVarStrinig     : string = '';
+    private minhaVarString      : string = '';
     private minhaVarNumber      : number = 0;  // O tipo number aceita tanto números inteiros com números com casas decimais.
     private minhaVarAny         : any = null;  // Quando você não sabe o tipo de dado que vai armazenar você usa o tipo any.
     public  variavelPublica     : string = '';
@@ -41,7 +41,7 @@ export class Language {
     // Método publico e sem nenhum tipo de retorno
     public run() : void{
       console.log('Main method passed');
-  
+      
       /*
          Você deve usar a palavra reservada this para acessar os membros da classe.
          Podem ser variaveis da classe ou métodos da classe.
@@ -67,7 +67,7 @@ export class Language {
         === - Igual literal     (O valor e o tipo de dados devem ser igual)
         !== - Diferente literal (O valor ou tipo de dados não são iguais)
       */
-      if (this.minhaVarStrinig === this.variavelPublica){
+      if (this.minhaVarString === this.variavelPublica){
         return true;
       } else {
         return false;
