@@ -28,7 +28,7 @@
 
 
 -- Continuação do exercício de delivery
-- Criar uma conta no site https://www.mockapi.io/ (ATENÇÃO USAR O PROTOCOLO HTTP E NAO O HTTPS DO MOCKAPI QUANDO FOR CONSUIR A RESTAPI)
+- Criar uma conta no site https://www.mockapi.io/ (ATENÇÃO USAR O PROTOCOLO HTTP E NAO O HTTPS DO MOCKAPI QUANDO FOR CONSUMIR A RESTAPI)
     -> Criar um endpoint para sabores, tamanhos, cidades, bairos e pedidos
     -> Alimentar as opções que o usuário terá a partir da resposta que obteve dos endpoints
     -> Após obter todos os dados do usuário, alem de exibir os dados na tela, deve enviar os dados para o servidor
