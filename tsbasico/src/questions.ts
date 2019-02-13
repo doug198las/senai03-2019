@@ -45,7 +45,14 @@ export class Questions {
     public getSabores(){
         new VpHttp('http://5c61683a1325a20014976426.mockapi.io/sabor').get().subscribe(
             (data : any) => {
-                console.log(data);
+                new VpHttp('http://5c61683a1325a20014976426.mockapi.io/sabor').post({}).subscribe(
+                    (data : any) => {
+                        console.log('Conseguiu dar o post no mockapi')
+                    },
+                    (error : any) => {
+                        console.log('Não conseguiu dar o post no mockapi');
+                    }
+                )
             },
             (error : any) => {
                 console.log(error);
