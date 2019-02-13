@@ -22,4 +22,8 @@ export class Perguntas {
             );
         console.log('Passo 3');
     }
+
+    public getSabores(){
+        
+    }
 }

@@ -1,4 +1,4 @@
 import {Language} from './language';
 import {Questions} from './questions';
 
-new Questions().selectCar();
+new Questions().getSabores();

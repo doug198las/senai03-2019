@@ -32,6 +32,7 @@ export class VpHttp {
         if (this.accessToken != null) {
             headers['Authorization'] = 'bearer ' + this.accessToken;          
         }
+        
     
         return headers;
     }
@@ -73,7 +74,7 @@ export class VpHttp {
     }
     
     public get() {
-      let headers = this.prepareHeaders(false);
+      let headers = this.prepareHeaders(true);
     
       return this.http.get(this.url, headers);
     }      

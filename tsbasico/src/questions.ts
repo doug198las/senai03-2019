@@ -1,4 +1,5 @@
 import {prompt} from 'inquirer';
+import {VpHttp} from './http/vphttp';
 
 export class Questions {
 
@@ -39,5 +40,16 @@ export class Questions {
                         console.log(`\nOlá ${answers.name}. Você gosta da marca ${answers.car}. Obrigado! \n`);
                     }
                 );
+    }
+
+    public getSabores(){
+        new VpHttp('http://5c61683a1325a20014976426.mockapi.io/sabor').get().subscribe(
+            (data : any) => {
+                console.log(data);
+            },
+            (error : any) => {
+                console.log(error);
+            }
+        );
     }
 }
