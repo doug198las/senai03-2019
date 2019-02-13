@@ -1,7 +1,5 @@
-export class OlaMundo {
-    public run(){
-        console.log('Olá mundo');
-    }
-}
+import {Perguntas} from './perguntas';
 
-new OlaMundo().run();
+
+
+new Perguntas().facaUmaPergunta();
