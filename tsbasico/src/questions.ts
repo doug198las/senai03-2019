@@ -39,20 +39,19 @@ export class Questions {
                     (answers : any) => {
                         console.log(`\nOlá ${answers.name}. Você gosta da marca ${answers.car}. Obrigado! \n`);
                     }
+                ).catch(
+                    (erro : any) => {
+                        
+                    }
                 );
     }
 
     public getSabores(){
-        new VpHttp('http://5c61683a1325a20014976426.mockapi.io/sabor').get().subscribe(
+        let http = new VpHttp('http://5c61683a1325a20014976426.mockapi.io/sabor');
+
+        http.get().subscribe(
             (data : any) => {
-                new VpHttp('http://5c61683a1325a20014976426.mockapi.io/sabor').post({}).subscribe(
-                    (data : any) => {
-                        console.log('Conseguiu dar o post no mockapi')
-                    },
-                    (error : any) => {
-                        console.log('Não conseguiu dar o post no mockapi');
-                    }
-                )
+                console.log(data);
             },
             (error : any) => {
                 console.log(error);
