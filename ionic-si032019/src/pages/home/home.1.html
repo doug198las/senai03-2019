@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <button ion-button primary (click)="addAlunos()">Carregar Alunos</button>
+  </div>
+
+  <div>
+    <button ion-button secudary (click)="esconderAlunos()">Esconder Lista</button>
+  </div>
+
+  <div>
+    <button ion-button light (click)="limparLista()">Limpar lista</button>
+  </div>
+  
+  <ion-list *ngIf="exibirLista">
+    <ion-item *ngFor="let aluno of listaAlunos">
+      {{aluno.nome}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
