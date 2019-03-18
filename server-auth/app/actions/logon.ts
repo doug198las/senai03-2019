@@ -10,7 +10,7 @@ export class LogonAction extends Action{
         let userName = this.req.body.userName;
         let password = this.req.body.password;
 
-        this.sendAnswer({token : new VPUtils().generateGUID()});
+        this.sendAnswer({token : new VPUtils().generateGUID().toUpperCase()});
     }
 
     defineVisibility() {
