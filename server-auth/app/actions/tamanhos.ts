@@ -9,15 +9,18 @@ export class TamanhosAction extends Action {
         let tamanhos = [
             {
                 id : 1,
-                name : "Pequeno"
+                name : "Pequeno",
+                quantidade_sabores : 1
             },
             {
                 id : 2,
-                name : "Médio"
+                name : "Médio",
+                quantidade_sabores : 2
             },
             {
                 id : 3,
-                name : "Grande"
+                name : "Grande",
+                quantidade_sabores : 3
             }
         ]
 

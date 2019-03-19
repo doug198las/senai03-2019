@@ -18,6 +18,7 @@ export class SaboresAction extends Action {
             pizzas.push(this.createPizzaObject('Quatro Queijos', 15.00));
             pizzas.push(this.createPizzaObject('Bacon', 13.00));
             pizzas.push(this.createPizzaObject('Chocolate', 14.00));
+            pizzas.push(this.createPizzaObject('Brocolis', 16.00));
         }
 
         if (tamanho == 2){
@@ -25,13 +26,15 @@ export class SaboresAction extends Action {
             pizzas.push(this.createPizzaObject('Quatro Queijos', 21.00));
             pizzas.push(this.createPizzaObject('Bacon', 19.00));
             pizzas.push(this.createPizzaObject('Chocolate', 20.00));
-        }    
+            pizzas.push(this.createPizzaObject('Brocolis', 22.00));
+        }
         
         if (tamanho == 3){
             pizzas.push(this.createPizzaObject('Calabresa', 25.00));
             pizzas.push(this.createPizzaObject('Quatro Queijos', 28.00));
             pizzas.push(this.createPizzaObject('Bacon', 26.00));
             pizzas.push(this.createPizzaObject('Chocolate', 27.00));
+            pizzas.push(this.createPizzaObject('Brocolis', 29.00));
         }
         this.sendAnswer(pizzas);
     }
