@@ -9,12 +9,31 @@ export class HttpProvider {
     public url : string;
     public token : string;
 
-    //private const TIMEOUT : number = 15000;
+    private TIMEOUT = 15000;
 
     constructor(){
         this.url = null;
         this.token = null;
     }
+
+    private prepareHeaders(contentType : boolean){
+        var headers = new Headers();
+        headers.append('Accept', 'application/json');
+    
+        if (contentType){
+          headers.append('Content-Type', 'application/json');
+        }
+    
+        if (this.token == ''){
+          this.token = null;
+        }
+    
+        if (this.token != null){
+          headers.append('Authorization', 'bearer ' + this.token);
+        }
+    
+        return headers;
+      }
     public get(){
 
     }
