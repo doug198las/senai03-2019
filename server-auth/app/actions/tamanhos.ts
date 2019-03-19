@@ -18,10 +18,6 @@ export class TamanhosAction extends Action {
             {
                 id : 3,
                 name : "Grande"
-            },
-            {
-                id : 4,
-                name : "Gigante"
             }
         ]
 
