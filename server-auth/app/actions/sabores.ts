@@ -1,4 +1,4 @@
-import {Post, Get} from '../decorators';
+import { Get} from '../decorators';
 import {Action} from '../kernel/action';
 import {ActionType} from '../kernel/route-types';
 import { KernelUtils } from '../kernel/kernel-utils';
