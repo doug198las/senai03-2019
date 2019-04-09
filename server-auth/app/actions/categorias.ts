@@ -2,28 +2,28 @@ import {Get} from '../decorators';
 import {Action} from '../kernel/action';
 import {ActionType} from '../kernel/route-types';
 
-export class CidadesAction extends Action {
+export class CategoriasAction extends Action {
 
-    @Get('/cidades')
-    public getCidades(){
-        let cidades : any = [];
+    @Get('/categorias')
+    public getCategorias(){
+        let categorias : any = [];
 
-        cidades.push(
+        categorias.push(
                     {
                         id : 1,
-                        name : "Jaraguá do Sul"
+                        name : "Bebidas"
                     },
                     {
                         id : 2,
-                        name : "Corupá"
+                        name : "Alimentos"
                     },
                     {
                         id : 3,
-                        name : "Guaramirim"
+                        name : "Diversos"
                     }
                    );
 
-        this.sendAnswer(cidades);
+        this.sendAnswer(categorias);
     }
 
     defineVisibility() {

@@ -23,7 +23,7 @@ export class AccessControl {
         return new Observable(observer => {
             this.observer = observer;
 
-            if (this.action.defineVisibility){            
+            if (this.action.defineVisibility){
                 this.action.defineVisibility();
             }
 
