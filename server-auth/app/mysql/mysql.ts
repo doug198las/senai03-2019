@@ -18,6 +18,8 @@ export class MySQL {
     }
 
     private executeSelect(sql : string, connection : Connection, observer : any) : void{
+        console.log(sql);
+
         connection.query(sql, (error : any, result : any, fields : any) => {
             if (error){
                 connection.end();
@@ -30,7 +32,12 @@ export class MySQL {
                 connection.end();
                 observer.next(result);
                 observer.complete();
+                return;
             }
+
+            connection.end();
+            observer.error({});
+            observer.complete();
         });
     }
 
